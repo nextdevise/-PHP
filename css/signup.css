@@ -1,0 +1,108 @@
+#container{
+    width:100%;
+    height:100%;
+    max-height:1080px;
+    min-height:800px;
+    min-width:350px;
+    background-image:url("../img/background.png");
+    background-repeat:no-repeat;
+    background-position:right bottom;
+    display:flex;
+    flex-direction:column;
+}
+#content{
+    flex-grow:1;
+    max-width:1170px;
+    width:100%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.menuUi{
+    max-width:600px;
+    width:100%;
+    border: 4px solid #113fff;
+    padding:20px 0;
+}
+.toInfo{
+    text-align:right;
+    padding-right:20px;
+}
+.placeholder{
+    text-align:right;
+    padding-right:20px;
+}
+#signUpTitle{
+    color: #1737ff;
+    text-align:center;
+    font-size:40px;
+}
+#signUpTitle span{
+    display:inline;
+    padding:10px 30px;
+    border-bottom: 4px solid #1935ff;
+}
+#signInfoInput{
+    margin:40px auto;
+    border-collapse:collapse;
+}
+.td1{
+    text-align: center;
+    padding-right:10px;
+}
+.input{
+    width:100%;
+    height:30px;
+    border: 2px solid #1040ff;
+}
+#code{
+    height:30px;
+    width:160px;
+    border: 2px solid #1040ff;
+}
+.codeInput{
+    width:150px;
+    height:30px;
+}
+td{
+    padding:5px 0;
+}
+#submit{
+    width:100%;
+    background-color: #113fff;
+    color:white;
+    font-size:20px;
+    border:none;
+    border-radius:5px;
+    height:34px;
+}
+.fileInput{
+    display:flex;
+    justify-content:space-between;
+    padding-right:10px;
+}
+#staffAge,#department{
+    width: 100px;
+    height: 30px;
+    border: 2px solid #1040ff;
+}
+#codeImg{
+    border: 2px solid #113fff;
+    margin-left:10px;
+}
+#codeInput{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+td{
+    /* border:1px solid red; */
+}
+
+/*媒体查询*/
+@media screen and (max-width:767px){
+    .menuUi{
+        border:none;
+    }
+}

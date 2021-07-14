@@ -1,0 +1,77 @@
+.mainUiContent{
+    width:100%;
+    height:90%;
+    background-color:white;
+    margin:0 10px;
+    padding:5px;
+}
+.mainTop{
+    display:flex;
+    position:relative;
+    justify-content:center;
+    align-items:center;
+    padding:10px 0;
+}
+.staffInfoTable{
+
+}
+.staffInfoTable > tr:first-child{
+    background-color:#034eff;
+    color:white;
+    height:35px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.staffInfoTable .staffInfoTr{
+    height:60px;
+}
+.staffInfoTable{
+    width:100%;
+    border-collapse:collapse;
+        box-shadow: 0px 3px 20px 0 rgb(226, 226, 226);
+}
+.staffInfoTable td{
+        border: 1px solid rgb(255, 255, 255);
+    text-align:center;
+    font-size: 15px;
+}
+.staffPic{
+    padding:2px;
+    width:60px;
+    height:60px;
+    object-fit: contain;
+}
+.staffInfoTr td{
+    min-width:30px;
+    max-width:100px;
+    height:60px;
+    background-color: #f7f7f7;
+}
+.staffInfoTable .staffInfoDiv{
+    width:90%;
+    height:90%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:auto;
+}
+/*设置滚动条属性*/
+.staffInfoTable .staffInfoDiv::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+}
+
+.staffInfoTable .staffInfoDiv::-webkit-scrollbar-thumb {
+    background: #CCCCCC;
+    border-radius: 2px;
+}
+/*分页*/
+.pageDiv{
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding:10px 5px;
+    display:flex;
+    justify-content:flex-end;
+}

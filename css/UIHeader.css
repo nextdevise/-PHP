@@ -1,0 +1,55 @@
+header{
+    width:100%;
+    background-image: linear-gradient(to right, #4403ff 0%, #034eff 100%);
+}
+#top{
+    margin:auto;
+    max-width:1170px;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    height:40px;
+    padding:20px 0;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style-type:none;
+}
+.logo{
+    display:flex;
+    align-items:center;
+}
+.title{
+    color:white;
+}
+.menu li{
+    display:inline-block;
+    padding:0 10px;
+}
+#logo{
+    width:130px;
+    padding:0 20px;
+    margin:auto;
+    display:block;
+}
+/*头部响应式布局*/
+@media screen and (max-width:767px){
+    .menu{
+        display:none;
+    }
+    #top{
+        justify-content:center;
+    }
+}
+@media screen and (max-width:420px){
+    #top{
+        height:70px;
+    }
+    .logo{
+        display:block;
+    }
+}

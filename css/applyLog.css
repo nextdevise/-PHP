@@ -1,0 +1,77 @@
+.logTable > tr:first-child{
+    background-color: #034eff;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+.logTable{
+    width:100%;
+    border-collapse:collapse;
+    box-shadow: 0px 3px 20px 0 rgb(226, 226, 226);
+}
+.logTable > tr{
+    height:40px;
+    text-align:center;
+    background-color: #f7f7f7;
+    font-size: 14px;
+}
+.logTable .logInfoTd{
+    min-width:50px;
+    max-width:120px;
+    height:80px;
+
+    /*百分比居然不是相对于table的百分比*/
+}
+.logTable td{
+        border: 1px solid rgb(255, 255, 255);
+    text-align:center;
+}
+.logTable .logInfo{
+    height:90%;
+    overflow:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+}
+.logTable .logInfoTd{}
+
+/*设置滚动条属性*/
+.logTable .logInfo::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+}
+
+.logTable .logInfo::-webkit-scrollbar-thumb {
+    background: #CCCCCC;
+    border-radius: 2px;
+}
+.pageDiv{
+        font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding:10px 5px;
+    display:flex;
+    justify-content:flex-end;
+    position:relative;
+}
+.mainUiContent{
+    width:90%;
+    height:80%;
+    padding:2%;
+    background-color:white;
+}
+.mainTop{
+    display:flex;
+    position:relative;
+    justify-content:center;
+    align-items:center;
+    padding:10px 0;
+}
+.changConference{
+    position:absolute;
+    left:0;
+}
+.changeSelect{
+    height:25px;
+}

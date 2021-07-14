@@ -1,0 +1,387 @@
+#container-time {
+    width: 430px;
+    height: 300px;
+    border: 2px solid #034eff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#content-time{
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    /* border:1px solid white; */
+}
+
+#dateChoose {
+    width: 60%;
+    display:flex;
+    flex-direction:column;
+}
+
+#hoursChoose {
+    width: 15%;
+}
+
+#minuteChoose {
+    width: 15%;
+}
+
+.timeChoose {
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid red; */
+}
+
+.nowTime {
+    color: white;
+    background-color: #034eff;
+    padding: 5px 0 5px 2px;
+    border-radius: 2px;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.timeChoose > li.li1{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    border-bottom: 1px solid #ffffff;
+    background-color: #f7f7f7;
+    padding: 3px 7px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.currentDate {
+    color: white;
+    background-color: #034eff !important;
+}
+
+.currentHour {
+    color: white;
+    background-color: #034eff !important;
+}
+
+.Choose {
+    padding: 1px 0;
+    background-color: white;
+    flex-grow: 1;
+    border-radius: 2px;
+}
+
+.direction {
+    width: 98%;
+    object-fit: contain;
+}
+.directionBottom{
+
+}
+.directionTop{
+
+}
+
+#hoursChoose,
+#minuteChoose {
+    display: flex;
+    flex-direction: column;
+}
+
+.hours,
+.minutes {
+    overflow: auto;
+    height: 70%;
+    width: 80%;
+    background-color: white;
+    margin: 2px 0;
+    border: 1px solid rgba(117, 117, 117, 0.22);
+    border-radius: 2px;
+}
+
+.HD {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    background: #f7f7f7;
+    margin: 1px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.time::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+}
+
+.time::-webkit-scrollbar-thumb {
+    background: #CCCCCC;
+    border-radius: 2px;
+}
+
+.directionBox {
+    width: 85%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.directionBox:hover {
+    cursor: pointer;
+}
+
+#footer {
+    width: 400px;
+    height: 50px;
+    border: 1px solid white;
+    margin-top: 10px;
+    display: flex;
+
+}
+
+.chooseTitle {
+    color: #ff0000;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    margin-right: auto;
+    padding: 3px 0;
+}
+
+.myChooseTime li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    list-style-type: none;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.myChooseTime {
+       width: 63%;
+    color: #ff0000;
+    font-weight: 600;
+    font-size: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.myChooseTime ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.myBtn {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn {
+       width: 90%;
+    color: white;
+    background-color: #034eff;
+    box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.35);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+#applySubmit{
+    color:white;
+    width:250px;
+    border-radius:5px;
+    height:40px;
+    background-color:#034eff;
+    font-size:18px;
+    border:1px solid white;
+}
+#applyTable{
+    margin:50px auto;
+    /*border:1px solid red;*/
+    border-collapse:collapse;
+}
+#applyTable .applyInfo{
+    text-align: center;
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+#applyTable .onlyReadInput{
+    /*background-color: rgba(0, 0, 0, 0.03);*/
+    color: rgba(0, 0, 0, 0.5);
+}
+#applyTable .applyInput{
+    width:250px;
+    height:30px;
+    border-collapse:separate;
+    border-spacing:10px;
+}
+#applyTable .selectInfo{
+    height:30px;
+    width:100px;
+}
+#applyTable .helpInfo{
+    padding-left:10px;
+    width:200px;
+    font-size:13px;
+    color: rgba(0, 0, 0, 0.27);
+}
+
+#applyTable td{
+    height:35px;
+    /*border:1px solid red;*/
+}
+#startTime,#endTime{
+    font-size:17px;
+}
+#startTime:disabled,#endTime:disabled {
+    cursor: not-allowed;
+}
+#applyTable #chooseTimes{
+    height:0;
+    overflow:hidden;
+    /*position:absolute;*/
+}
+#chooseTimesTool{
+    position:relative;
+}
+#applyTable .chooseTime{
+   padding-left:10px;
+}
+#applyTable .applySubmit{
+    padding-top:20px;
+}
+/*////////////////*/
+.mainUiContent{
+   width:100%;
+   height:90%;
+   background-color:white;
+   margin:0 10px;
+}
+.rightMainUi{
+    background-color: rgba(128, 128, 128, 0.06);
+}
+.mainTop{
+    margin-top:10px;
+}
+.mainTop .applyMenu{
+    box-shadow: 0 3px 8px -5px rgba(0, 0, 0, 0.28);
+    border-radius: 2px;
+    margin: 0 10px;
+    background-color: #f7f7f7;
+}
+.mainTop .applyMenu ul li{
+    list-style-type: none;
+    display: inline-block;
+    color: #034eff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.currentMenu{
+    border-bottom:2px solid #2796ff
+}
+.mainTop .applyMenu ul li span{
+    padding:0 20px;
+    display:block;
+}
+.mainTop .applyMenu ul li:first-child{
+    /*border-bottom:2px solid yellow;*/
+}
+.mainContent{
+    margin: 20px 10px 0 10px;
+    padding: 10px 0;
+}
+.meetRoomIcon{
+    width:200px;
+    object-fit:contain;
+}
+.meetRoom{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+#lookUpConference ul li{
+    list-style-type:none;
+    display:inline-block;
+    width:250px;
+    height:170px;
+    box-shadow: 0 5px 5px 0 rgba(162, 162, 162, 0.5);
+    margin-left: 10px;
+}
+.showRoomName{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    display:flex;
+    align-items:center;
+}
+.showRoomName span{
+    display:block;
+    padding:5px 0;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align:center;
+    font-size:24px;
+    color: #034eff;
+    font-weight:bold;
+}
+.isUseRoom{
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+}
+.isUseRoom span{
+    display:flex;
+    width:100%;
+    height:100%;
+    /* 也难怪 */
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    color: white;
+    font-weight:bold;
+}
+.notUseRoom{
+    background-color: rgba(255, 0, 0, 0.6);
+}
+.canUseRoom{
+    background-color: rgba(3, 78, 255, 0.6);
+}
+.meetRoom:hover > .isUseRoom{
+display:block;
+}
+.applyTitle{
+    color: rgb(255, 0, 0);
+    width:100%;
+    text-align:center;
+}
+.applyTitle span{
+    padding:10px 40px;
+    border-bottom: 3px solid #034eff;
+}

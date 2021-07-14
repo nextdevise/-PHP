@@ -1,0 +1,105 @@
+.mainUiContent{
+    width:100%;
+    height:90%;
+    background-color:white;
+    margin:0 10px;
+}
+.rightMainUi{
+    background-color: rgba(128, 128, 128, 0.06);
+}
+.mainTop{
+    margin-top:10px;
+}
+.mainTop .menuTop{
+    margin:0 10px;
+}
+.mainTop .menuTop ul li{
+    list-style-type:none;
+    display:inline-block;
+    color: #034eff;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:white;
+    padding:15px 0;
+    cursor:pointer;
+}
+.mainTop .menuTop ul li span{
+    padding:0 20px;
+    display:block;
+}
+.mainContent{
+    margin:20px 10px 0 10px;
+    padding:10px 0;
+}
+.mainNode{
+    color: rgb(255, 171, 77);
+    width:100%;
+    text-align:center;
+}
+.currentUser{
+    width:200px;
+    height:100px;
+    object-fit:contain;
+    border:1px solid rgba(255, 0, 0, 0.46);
+    padding:10px;
+}
+#changeInfoInput{
+    border-collapse:collapse;
+    margin:40px auto;
+}
+#changeInfoInput td{
+    /*border:1px solid black;*/
+    padding:5px 0;
+}
+#changeInfoInput .input{
+    height:30px;
+    width:100%;
+}
+#changeInfoInput .select{
+    height:30px;
+    width:70px;
+}
+#changeInfoInput #code{
+    height:30px;
+    width:100%;
+}
+#codeImg{
+    border:1px solid gray;
+    margin-left:10px;
+}
+#changeInfoInput #changeSubmit{
+    width:250px;
+    border:none;
+    background-color:#034eff;
+    color:white;
+    font-size:17px;
+    padding:5px 0;
+    border-radius:3px;
+}
+#changeInfoInput .helpInfo{
+    color: #6d6b6b;
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 20px;
+}
+#changeInfoInput .td1{
+    text-align: center;
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+#changeInfoInput .lastTd{
+    width:70px;
+}
+#changeInfoInput .fileInput{
+    padding-left:20px;
+}
+.changeTitle{
+    color: #ff0000;
+    width:100%;
+    text-align:center;
+}
+.changeTitle span{
+    padding:10px 40px;
+    border-bottom:4px solid #034eff;
+}
